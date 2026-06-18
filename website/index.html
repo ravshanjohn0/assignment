@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Ravshan Rakhmonberdiev | Backend & Data Engineer</title>
+  <meta name="description" content="Ravshan Rakhmonberdiev — Backend and Data Engineer focused on API design, PostgreSQL, and scalable system architecture." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- ================= SCROLL PROGRESS ================= -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ================= NAVBAR ================= -->
   <header class="header">
     <div class="container nav">
@@ -17,10 +21,11 @@
 
       <nav class="nav-links" id="navLinks">
         <a href="#home" class="nav-link active">Home</a>
-        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
         <a href="#experience" class="nav-link">Experience</a>
-        <a href="#process" class="nav-link">Process</a>
-        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
@@ -30,256 +35,276 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero section-page" id="home">
+    <div class="hero-blob" aria-hidden="true"></div>
+
     <div class="container hero-content">
       <div class="avatar"></div>
 
       <div class="status">
         <span class="status-dot"></span>
-        Available for backend and data engineering projects
+        Available for backend and data engineering work
       </div>
 
-      <h1>I build scalable backend systems and database architecture</h1>
+      <h1>I build scalable backend systems and data-driven architecture</h1>
 
       <p>
-        Hi, I’m Ravshan Rakhmonberdiev — a Backend and Data Engineer focused on
-        API design, PostgreSQL, system architecture, and high-performance web platforms.
+        Backend and Data Engineer with almost 3 years of experience designing APIs, modeling
+        databases, and architecting systems for real products — currently leading the technical
+        development of <strong>Magi</strong>, an exam monitoring platform for universities in Uzbekistan.
       </p>
 
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Contact me</a>
-        <a href="#services" class="btn btn-outline">View services</a>
+        <a href="#experience" class="btn btn-outline">View experience</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-target="3" >0</span>
+          <span class="stat-label">Years of experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Leadership roles</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="60" data-suffix="ms">0</span>
+          <span class="stat-label">Faster API response</span>
+        </div>
+      </div>
+
+      <div class="hero-social">
+        <a href="mailto:ravshan.direct@gmail.com" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 4 8 8 8-8"/></svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/ravshan-rakhmonberdiev/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"/></svg>
+          LinkedIn
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= SERVICES ================= -->
-  <section class="section section-page" id="services">
+  <!-- ================= ABOUT ================= -->
+  <section class="section section-page" id="about">
     <div class="container">
-      <p class="eyebrow">Services</p>
+      <p class="eyebrow reveal">About</p>
 
-      <h2 class="section-title">
-        Here’s what I can build and maintain for you
+      <h2 class="section-title reveal">
+        Backend-first, data-driven
       </h2>
 
-      <p class="section-text">
-        I focus on backend logic, database structure, system design, and scalable product architecture.
+      <p class="section-text reveal">
+        I design APIs, model databases, and plan system architecture so products stay fast,
+        reliable, and easy to scale. I design technical architectures with Miro and collaborate
+        through GitHub to ship secure, high-performance software.
       </p>
 
-      <div class="cards-grid">
-        <div class="card">
+      <div class="tag-cloud reveal">
+        <span class="tag">JavaScript</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">API Design</span>
+        <span class="tag">System Architecture</span>
+        <span class="tag">Database Modeling</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section section-page" id="skills">
+    <div class="container">
+      <p class="eyebrow reveal">Skills</p>
+
+      <h2 class="section-title reveal">
+        Technologies I work with
+      </h2>
+
+      <p class="section-text reveal">
+        A TypeScript and PostgreSQL-focused stack across backend systems, frontend interfaces, and tooling.
+      </p>
+
+      <div class="cards-grid skills-grid">
+        <div class="card reveal">
           <div class="icon green">DB</div>
-          <h3>Database Design & Maintenance</h3>
-          <p>
-            I design, model, optimize, and maintain databases using PostgreSQL and MongoDB,
-            including schemas, relationships, indexing, and SQL functions.
-          </p>
+          <h3>Backend</h3>
+          <div class="card-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Socket.io</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="icon blue">API</div>
-          <h3>Backend API Development</h3>
-          <p>
-            I build REST APIs with Node.js, Express, TypeScript, and Socket.io for secure,
-            fast, and reliable application communication.
-          </p>
+        <div class="card reveal">
+          <div class="icon blue">FE</div>
+          <h3>Frontend</h3>
+          <div class="card-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="icon purple">SYS</div>
-          <h3>System Design & Architecture</h3>
-          <p>
-            I plan system architecture, data flow, modules, and infrastructure using tools like Miro
-            so products are easier to scale and maintain.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="icon yellow">DEV</div>
-          <h3>Full-Stack Product Development</h3>
-          <p>
-            I develop full-stack applications using Next.js, React, TypeScript, PostgreSQL,
-            Docker, GitHub Actions, and modern deployment workflows.
-          </p>
+        <div class="card reveal">
+          <div class="icon purple">OPS</div>
+          <h3>Tools &amp; DevOps</h3>
+          <div class="card-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">SMTP</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Miro</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= WORK EXPERIENCE ================= -->
+  <!-- ================= EXPERIENCE ================= -->
   <section class="section section-page" id="experience">
     <div class="container">
-      <div class="experience-header">
-        <p class="eyebrow">Work Experience</p>
+      <p class="eyebrow reveal">Experience</p>
 
-        <h2 class="section-title experience-title">
-          Practical experience building real software products
-        </h2>
+      <h2 class="section-title reveal">
+        Leading technical development end to end
+      </h2>
 
-        <p class="section-text experience-text">
-          My work focuses on building platforms with strong backend systems, clean architecture,
-          optimized databases, and maintainable code.
-        </p>
-      </div>
+      <p class="section-text reveal">
+        My work focuses on system architecture, database infrastructure, and performance —
+        from design through delivery.
+      </p>
 
-      <div class="experience-grid">
-        <div class="experience-card">
-          <span>May 2026 — Ongoing</span>
+      <div class="experience-card big-card reveal">
+        <span>May 2026 — Ongoing</span>
 
-          <h3>
-            <a href="https://www.trymagi.org/" target="_blank">
-              Chief Technology Officer — Magi
-            </a>
-          </h3>
-
-          <p>
-            Leading technical development of an exam monitoring web platform for universities.
-            I designed the system architecture, database infrastructure, and backend logic.
-          </p>
-
-          <a href="https://www.trymagi.org/" target="_blank" class="experience-link">
-            Visit Magi →
+        <h3>
+          <a href="https://www.trymagi.org/" target="_blank">
+            Chief Technology Officer — Magi
           </a>
+        </h3>
+
+        <p>
+          Leading the technical development of Magi, an exam monitoring web platform for private
+          and public universities in Uzbekistan.
+        </p>
+
+        <ul class="bullet-list">
+          <li>Designed the system architecture and database infrastructure using the Miro platform.</li>
+          <li>Optimized performance by replacing multiple database queries with SQL functions, reducing API response time by approximately 20–60ms.</li>
+          <li>Recruited and managed developers to accelerate product delivery and ensure scalability.</li>
+          <li>Attracted interest from entrepreneurs Umidjon Ishmukhamedov and Akmal Paiziev while still in development.</li>
+        </ul>
+
+        <a href="https://www.trymagi.org/" target="_blank" class="experience-link">
+          Visit Magi →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section section-page" id="projects">
+    <div class="container">
+      <p class="eyebrow reveal">Project</p>
+
+      <h2 class="section-title reveal">
+        Building RavAcademy
+      </h2>
+
+      <p class="section-text reveal">
+        A full-stack learning platform with personalized roadmaps for junior developers.
+      </p>
+
+      <div class="experience-card big-card reveal">
+        <span>Feb 2026 — Ongoing</span>
+
+        <h3>CEO &amp; Founder — RavAcademy (development process)</h3>
+
+        <div class="card-tags project-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GitHub Actions</span>
         </div>
 
-        <div class="experience-card">
-          <span>Oct 2025 — Nov 2025</span>
+        <ul class="bullet-list">
+          <li>Built a full-stack learning platform with personalized roadmaps for junior developers based on skill level, goals, and interests.</li>
+          <li>Designed a hybrid data architecture using PostgreSQL for overall project structure and MongoDB for flexible learning resources and user-generated content.</li>
+          <li>Implemented core backend services, including user progression tracking, exercise retrieval, user profile management, and dashboard analytics for learning performance.</li>
+          <li>Designed interactive programming exercises that teach language fundamentals through real-world problem solving, supported by visual aids and solution walkthrough videos.</li>
+          <li>Architected a modular system with containerized deployment (Docker) and CI/CD pipelines using GitHub Actions for automated testing and deployment workflows.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================= EDUCATION ================= -->
+  <section class="section section-page" id="education">
+    <div class="container">
+      <p class="eyebrow reveal">Education</p>
+
+      <h2 class="section-title reveal">
+        Academic background &amp; training
+      </h2>
+
+      <div class="experience-grid">
+        <div class="experience-card reveal">
+          <span>Jul 2025 — Jul 2028</span>
+          <h3>Gisma University of Applied Science, Germany</h3>
+          <p>BEng Software Engineering</p>
+          <div class="card-tags">
+            <span class="tag">English – C1</span>
+            <span class="tag">Russian – C1</span>
+            <span class="tag">German – A2</span>
+          </div>
+        </div>
+
+        <div class="experience-card reveal">
+          <span>Oct 2025 — Nov 2025</span>
           <h3>
             <a href="https://42berlin.de/the-piscine" target="_blank">
               Piscine Student — 42 Berlin
             </a>
           </h3>
-
           <p>
-            Completed the intensive 42 Berlin Piscine, focused on problem-solving,
-            self-learning, debugging, peer reviews, teamwork, and daily project deadlines.
-          </p>
-
-          <a href="https://42berlin.de/the-piscine" target="_blank" class="experience-link">
-            View Piscine →
-          </a>
-        </div>
-
-        <div class="experience-card big-card">
-          <span>Feb 2026 — Ongoing</span>
-
-          <h3>CEO & Founder — RavAcademy</h3>
-
-          <p>
-            Building a full-stack learning platform with personalized roadmaps for junior developers.
-            The platform uses Next.js, TypeScript, PostgreSQL, MongoDB, Docker, and GitHub Actions.
-            I designed a hybrid database architecture, backend services, user progression tracking,
-            exercise retrieval, profile management, and dashboard analytics.
+            Completed the selective one-month 42 Berlin Piscine, an intensive and highly
+            competitive software engineering training program — daily team-evaluated projects
+            under strict deadlines, building debugging skills and a collaborative mindset
+            through peer reviews and continuous performance ranking.
           </p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= PROCESS ================= -->
-  <section class="section section-page" id="process">
-    <div class="container">
-      <p class="eyebrow">Process</p>
+      <p class="eyebrow certificates-eyebrow reveal">Certificates</p>
+      <h3 class="certificates-title reveal">JavaScript and CSS — Exercism Bootcamp (over a year)</h3>
 
-      <h2 class="section-title">
-        How I approach technical projects
-      </h2>
-
-      <p class="section-text">
-        I keep the workflow simple: understand the product, design the system,
-        build the backend, then optimize and maintain it.
-      </p>
-
-      <div class="process-grid">
-        <div class="process-card">
-          <div class="process-number">1</div>
-          <h3>Understand</h3>
-          <p>
-            I define the product goal, users, features, data needs, and technical requirements.
-          </p>
+      <div class="cards-grid certificates-grid">
+        <div class="cert-card reveal">
+          <span class="cert-hours">6m</span>
+          <h4>Exercism — Part 1</h4>
         </div>
-
-        <div class="process-card">
-          <div class="process-number">2</div>
-          <h3>Design</h3>
-          <p>
-            I create database models, API structure, system architecture, and module planning.
-          </p>
+        <div class="cert-card reveal">
+          <span class="cert-hours">8m</span>
+          <h4>Exercism — Part 2</h4>
         </div>
-
-        <div class="process-card">
-          <div class="process-number">3</div>
-          <h3>Build</h3>
-          <p>
-            I develop backend services, database logic, authentication, APIs, and integrations.
-          </p>
+        <div class="cert-card reveal">
+          <span class="cert-hours">47h</span>
+          <h4>Node.js</h4>
         </div>
-
-        <div class="process-card">
-          <div class="process-number">4</div>
-          <h3>Optimize</h3>
-          <p>
-            I improve performance, reduce unnecessary queries, clean code, and prepare for scale.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= FAQ ================= -->
-  <section class="section section-page" id="faq">
-    <div class="container">
-      <p class="eyebrow">FAQ</p>
-
-      <h2 class="section-title">Common questions</h2>
-
-      <div class="faq">
-        <div class="faq-item">
-          <button class="faq-question">
-            What technologies do you work with?
-            <span>+</span>
-          </button>
-
-          <div class="faq-answer">
-            I work with JavaScript, TypeScript, Node.js, Express, Next.js, React,
-            PostgreSQL, MongoDB, Docker, GitHub Actions, REST APIs, Socket.io, and Miro.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            Can you design and maintain databases?
-            <span>+</span>
-          </button>
-
-          <div class="faq-answer">
-            Yes. I can design schemas, relationships, hybrid database architecture,
-            SQL functions, indexes, and maintain database performance over time.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            Can you build a full backend system from scratch?
-            <span>+</span>
-          </button>
-
-          <div class="faq-answer">
-            Yes. I can plan the system architecture, build APIs, connect databases,
-            implement business logic, and prepare the backend for scaling.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            Do you also work with frontend?
-            <span>+</span>
-          </button>
-
-          <div class="faq-answer">
-            Yes. My main strength is backend and data engineering, but I also work with
-            Next.js, React, Vite, CSS, and Tailwind CSS for full-stack applications.
-          </div>
+        <div class="cert-card reveal">
+          <span class="cert-hours">23h</span>
+          <h4>TypeScript</h4>
         </div>
       </div>
     </div>
@@ -288,7 +313,7 @@
   <!-- ================= CONTACT ================= -->
   <section class="section-small section-page" id="contact">
     <div class="container">
-      <div class="contact-box">
+      <div class="contact-box reveal">
         <div>
           <p class="eyebrow">Contact</p>
 
@@ -296,12 +321,12 @@
 
           <p>
             If you need backend development, database architecture, or system design,
-            feel free to contact me.
+            feel free to reach out.
           </p>
         </div>
 
         <div class="contact-actions">
-          <a href="mailto:your.email@example.com" class="btn contact-btn">
+          <a href="mailto:ravshan.direct@gmail.com" class="btn contact-btn">
             Send email
           </a>
 
